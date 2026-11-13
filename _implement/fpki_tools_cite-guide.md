@@ -142,7 +142,6 @@ The FPKIMA has developed [draft Common PQC Certificate and CRL Profiles]({{site.
 | ------------ | ----------- | ----------- | 
 | Test FCPCA G2 | http://cite.fpki.gov/fcpca/caCertsIssuedByTestfcpcag2.p7c | http://cite.fpki.gov/fcpca/caCertsIssuedToTestfcpcag2.p7c |
 | Test FBCA G5 | http://cite.fpki.gov/bridge/caCertsIssuedByTestfbcag5.p7c | http://cite.fpki.gov/bridge/caCertsIssuedToTestfbcag5.p7c |
-| Test FBCA G4 | http://cite.fpki.gov/bridge/caCertsIssuedByTestfbcag4.p7c | http://cite.fpki.gov/bridge/caCertsIssuedToTestfbcag4.p7c |
 | Dev FCPCA D1 | http://repo.brawl.fpki-lab.gov/fcpca/caCertsIssuedByDevfcpcaD1.p7c | http://repo.brawl.fpki-lab.gov/fcpca/caCertsIssuedToDevfcpcaD1.p7c |
 | Dev FBCA D1 | http://repo.brawl.fpki-lab.gov/bridge/caCertsIssuedByDevfbcaD1.p7c | http://repo.brawl.fpki-lab.gov/bridge/caCertsIssuedToDevfbcaD1.p7c |
 
@@ -275,22 +274,6 @@ The table below lists the current test to production OID equivalent used by the 
 | 2.16.840.1.101.3.2.1.48.251 | APL test lab Golden PIV-I Digital Signature | N/A |
 | 2.16.840.1.101.3.2.1.48.252 | APL test lab Golden PIV-I Content Signing | N/A |
 
-#### Government Printing Office (GPO)
-
-| Test OID                    | Policy                 | Production OID     |
-| --------------------------- | ---------------------- | ------------------ |
-| 2.16.840.1.101.3.2.1.48.37 | id-gpo-certpcy-mediumAssurance | 2.16.840.1.101.3.2.1.17.1 |
-| N/A | id-gpo-certpcy-mediumHardware | 2.16.840.1.101.3.2.1.17.2 |
-| N/A | id-gpo-certpcy-devices | 2.16.840.1.101.3.2.1.17.3 |
-
-#### U.S. Patent and Trademark Office (USPTO)
-
-| Test OID                    | Policy                 | Production OID     |
-| --------------------------- | ---------------------- | ------------------ |
-| 2.16.840.1.101.3.2.1.48.66 | id-pto-basic-2003 | 2.16.840.1.101.3.2.1.2.7 |
-| 2.16.840.1.101.3.2.1.48.67 | id-pto-medium-2003 | 2.16.840.1.101.3.2.1.2.8 |
-| 2.16.840.1.101.3.2.1.48.65 | id-pto-mediumHardware | 2.16.840.1.101.3.2.1.2.9 |
-
 #### National Aeronautics and Space Administration (NASA)
 
 | Test OID                    | Policy                 | Production OID     |
@@ -330,16 +313,6 @@ See [Federal PKI Federal Common Policy](#federal-pki-federal-common-policy){:cla
 | 2.16.840.1.114412.99.4.3.2 | DigiCert Level 3 Client Certificate - CBP - Medium | 2.16.840.1.114412.4.3.2 |
 | 2.16.840.1.114412.99.4.4.1 | Digicert Level 4 Client Certificate - US - Hardware | 2.16.840.1.114412.4.4.1 |
 | 2.16.840.1.114412.99.4.4.2 | Digicert Level 4 Client Certificate - CBP - Hardware | 2.16.840.1.114412.4.4.2 |
-| 2.16.840.1.113733.1.7.21.1.1 | Class 1-VTN SSP-rudimentary | 2.16.840.1.113733.1.7.23.1.1.1 |
-| 2.16.840.1.113733.1.7.21.2.1 | Class 2-VTN SSP-basic | 2.16.840.1.113733.1.7.23.2.1.1 |
-| 2.16.840.1.113733.1.7.21.3.6 | Class 3-VTN SSP-medium | 2.16.840.1.113733.1.7.23.3.1.6 |
-| 2.16.840.1.113733.1.7.21.3.7 | Class 3-VTN SSP-mediumHardware | 2.16.840.1.113733.1.7.23.3.1.7 |
-| 2.16.840.1.113733.1.7.21.3.8 | Class 3-VTN SSP-Devices | 2.16.840.1.113733.1.7.23.3.1.8 |
-| 2.16.840.1.113733.1.7.21.3.13 | Class 3-VTN SSP-PIV-I Hardware | 2.16.840.1.113733.1.7.23.3.1.13 |
-| 2.16.840.1.113733.1.7.21.3.14 | Class 3-VTN SSP-Medium CBP | 2.16.840.1.113733.1.7.23.3.1.14 |
-| 2.16.840.1.113733.1.7.21.3.15 | Class 3-VTN SSP-Medium Hardware CBP | 2.16.840.1.113733.1.7.23.3.1.15 |
-| 2.16.840.1.113733.1.7.21.3.17 | Class 3-VTN SSP-PIV-I CardAuth | 2.16.840.1.113733.1.7.23.3.1.17 |
-| 2.16.840.1.113733.1.7.21.3.20 | Class 3-VTN SSP-PIV-I ContentSigning | 2.16.840.1.113733.1.7.23.3.1.20 |
 
 #### Exostar
 
@@ -401,14 +374,6 @@ See [Federal PKI Federal Common Policy](#federal-pki-federal-common-policy){:cla
 
 
 ### Commercial PKI Bridge Test OIDs
-
-#### SAFE Bio-Pharma Bridge
-
-| Test OID                    | Policy                 | Production OID     |
-| --------------------------- | ---------------------- | ------------------ |
-| N/A | Safe basic | 1.3.6.1.4.1.23165.1.1 |
-| N/A | Safe med software | 1.3.6.1.4.1.23165.1.2 |
-| N/A | Safe med HW | 1.3.6.1.4.1.23165.1.3 |
 
 #### CertiPath Bridge
 
